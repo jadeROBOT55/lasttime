@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="94" x="85" y="115">
+  <block type="movement_forward" id="94" x="109" y="139">
     <next>
       <block type="controls_whileUntil" id="101" inline="false">
         <field name="MODE">WHILE</field>
@@ -138,7 +138,7 @@
                                                         <mutation elseif="2" else="1"></mutation>
                                                         <value name="IF0">
                                                           <block type="logic_compare" id="498" inline="true">
-                                                            <field name="OP">LT</field>
+                                                            <field name="OP">GT</field>
                                                             <value name="A">
                                                               <block type="sensor_object" id="505">
                                                                 <field name="OBJECT">RIGHTSIDE</field>
@@ -152,7 +152,7 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO0">
-                                                          <block type="movement_left" id="538">
+                                                          <block type="movement_right" id="787">
                                                             <next>
                                                               <block type="robot_delay" id="755" inline="true">
                                                                 <value name="DELAY">
@@ -180,7 +180,7 @@
                                                           </block>
                                                         </value>
                                                         <statement name="DO1">
-                                                          <block type="movement_left" id="713">
+                                                          <block type="movement_right" id="805">
                                                             <next>
                                                               <block type="robot_delay" id="763" inline="true">
                                                                 <value name="DELAY">
