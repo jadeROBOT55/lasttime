@@ -135,10 +135,10 @@
                                                     </value>
                                                     <next>
                                                       <block type="controls_if" id="481" inline="false">
-                                                        <mutation elseif="1" else="1"></mutation>
+                                                        <mutation elseif="2" else="1"></mutation>
                                                         <value name="IF0">
                                                           <block type="logic_compare" id="498" inline="true">
-                                                            <field name="OP">GT</field>
+                                                            <field name="OP">LT</field>
                                                             <value name="A">
                                                               <block type="sensor_object" id="505">
                                                                 <field name="OBJECT">RIGHTSIDE</field>
@@ -146,7 +146,7 @@
                                                             </value>
                                                             <value name="B">
                                                               <block type="math_number" id="512">
-                                                                <field name="NUM">40</field>
+                                                                <field name="NUM">90</field>
                                                               </block>
                                                             </value>
                                                           </block>
@@ -156,7 +156,7 @@
                                                         </statement>
                                                         <value name="IF1">
                                                           <block type="logic_compare" id="545" inline="true">
-                                                            <field name="OP">GT</field>
+                                                            <field name="OP">LT</field>
                                                             <value name="A">
                                                               <block type="sensor_object" id="558">
                                                                 <field name="OBJECT">RIGHTSIDE</field>
@@ -164,12 +164,30 @@
                                                             </value>
                                                             <value name="B">
                                                               <block type="math_number" id="565">
-                                                                <field name="NUM">80</field>
+                                                                <field name="NUM">50</field>
                                                               </block>
                                                             </value>
                                                           </block>
                                                         </value>
                                                         <statement name="DO1">
+                                                          <block type="movement_left" id="713"></block>
+                                                        </statement>
+                                                        <value name="IF2">
+                                                          <block type="logic_compare" id="622" inline="true">
+                                                            <field name="OP">GT</field>
+                                                            <value name="A">
+                                                              <block type="sensor_object" id="660">
+                                                                <field name="OBJECT">RIGHTSIDE</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="math_number" id="629">
+                                                                <field name="NUM">90</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO2">
                                                           <block type="movement_right" id="528"></block>
                                                         </statement>
                                                         <statement name="ELSE">
